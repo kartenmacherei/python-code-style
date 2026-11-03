@@ -19,7 +19,7 @@ runs:
         fi
 
     - name: Detect changed files
-      uses: dorny/paths-filter@v2.11.1
+      uses: dorny/paths-filter@v4.0.3
       id: changes
       with:
         filters: |
