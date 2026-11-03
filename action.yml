@@ -43,7 +43,7 @@ runs:
 
     - name: pylint
       if: steps.changes.outputs.addedOrModifiedPython == 'true'
-      uses: dciborow/action-pylint@0.1.0
+      uses: dciborow/action-pylint@0.1.1
       with:
         glob_pattern: ${{ steps.changes.outputs.addedOrModifiedPython_files }}
         reporter: ${{ steps.reporter-check.outputs.reporter }}
